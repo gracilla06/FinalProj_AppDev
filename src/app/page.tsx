@@ -75,14 +75,14 @@ export default function LoginPage() {
             type="email"
             value={email}
             onChange={e => setEmail(e.target.value)}
-            placeholder="Email (e.g., Sincere@april.biz)"
+            placeholder="Email Address"
             className="w-full border p-2 rounded"
           />
           <input
             type="password"
             value={password}
             onChange={e => setPassword(e.target.value)}
-            placeholder="Password (use your username from JSONPlaceholder)"
+            placeholder="Password"
             className="w-full border p-2 rounded"
           />
           {error && <p className="text-red-500">{error}</p>}
