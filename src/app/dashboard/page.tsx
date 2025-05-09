@@ -42,7 +42,7 @@ export default function DashboardPage() {
 
   return (
     <div className="p-6 w-[70%] mx-auto bg-white/60 backdrop-blur-md rounded-2xl shadow-md">
-      <h1 className="text-3xl font-bold mb-4">Dashboard</h1>
+      <h1 className="text-3xl font-bold mb-4 text-center">Dashboard</h1>
       <div className="w-full max-w-2xl">
         <Chart
           options={chartOptions}
