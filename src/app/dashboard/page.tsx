@@ -41,15 +41,17 @@ export default function DashboardPage() {
   ];
 
   return (
-    <div className="p-6 w-[70%] mx-auto bg-white/60 backdrop-blur-md rounded-2xl shadow-md">
-      <h1 className="text-3xl font-bold mb-4 text-center">Dashboard</h1>
-      <div className="w-full max-w-2xl">
-        <Chart
-          options={chartOptions}
-          series={chartSeries}
-          type="bar"
-          height={350}
-        />
+    <div className="min-h-screen flex items-center justify-center from-gray-700 via-gray-900 to-black px-4">
+      <div className="bg-white/60 backdrop-blur-md rounded-2xl shadow-xl w-full max-w-3xl p-8">
+        <h1 className="text-3xl font-bold text-center mb-6 text-gray-800">Dashboard</h1>
+        <div className="w-full">
+          <Chart
+            options={chartOptions}
+            series={chartSeries}
+            type="bar"
+            height={350}
+          />
+        </div>
       </div>
     </div>
   );
