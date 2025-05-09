@@ -8,7 +8,6 @@ import { useState } from 'react';
 
 const AddressPicker = dynamic(() => import('../../components/AddressPicker'), { ssr: false });
 
-// Regex to allow only letters and spaces
 const nameRegex = /^[A-Za-z\s]+$/;
 
 const schema = z.object({
@@ -21,6 +20,7 @@ const schema = z.object({
     .min(2, 'Last name is too short')
     .regex(nameRegex, 'Last name must contain only letters'),
   email: z.string().email('Invalid email'),
+  password: z.string().min(8, 'Short Password'),
   phone: z
     .string()
     .regex(/^\d{10,}$/, 'Phone number must be at least 10 digits and contain only numbers'),
@@ -31,20 +31,35 @@ type FormData = z.infer<typeof schema>;
 
 export default function RegisterPage() {
   const [selectedAddress, setSelectedAddress] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
   const {
     register,
     handleSubmit,
     setValue,
+    reset,
     formState: { errors }
   } = useForm<FormData>({ resolver: zodResolver(schema) });
 
   const onSubmit = (data: FormData) => {
-    console.log('Validated:', data);
-  };
+  console.log('Validated:', data);
+  setSuccessMessage('Congrats! You have successfully Registered an Account');
+  reset();
+  setSelectedAddress('');
+  setTimeout(() => {
+    setSuccessMessage('');
+  }, 3000);
+};
 
   return (
     <div className="p-6 w-[40%] mx-auto bg-white/60 backdrop-blur-md rounded-2xl shadow-md">
       <h1 className="text-2xl font-bold mb-4">User Registration</h1>
+
+      {successMessage && (
+        <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
+          {successMessage}
+        </div>
+      )}
+
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         <input
           {...register('firstName')}
@@ -75,6 +90,13 @@ export default function RegisterPage() {
         {errors.phone && <p className="text-red-500">{errors.phone.message}</p>}
 
         <input
+          {...register('password')}
+          placeholder="Password"
+          className="w-full border p-2 rounded"
+        />
+        {errors.password && <p className="text-red-500">{errors.password.message}</p>}
+
+        <input
           {...register('address')}
           value={selectedAddress}
           readOnly
@@ -89,16 +111,14 @@ export default function RegisterPage() {
           }}
         />
 
-<div className="flex flex-col items-center space-y-4">
-  <button type="submit" className="bg-blue-600 text-white px-6 py-2 rounded">
-    Register
-  </button>
-  <a href="/login" className="text-blue-600 hover:underline">
-    Already have an account? Login
-  </a>
-</div>
-
-
+        <div className="flex flex-col items-center space-y-4">
+          <button type="submit" className="bg-blue-600 text-white px-6 py-2 rounded">
+            Register
+          </button>
+          <a href="/login" className="text-blue-600 hover:underline">
+            Already have an account? Login
+          </a>
+        </div>
       </form>
     </div>
   );
