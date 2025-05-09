@@ -30,12 +30,11 @@ export default function Header() {
         <Link href="/login" className="text-gray-800 hover:text-blue-600">Login</Link>
         <Link href="/register" className="text-gray-800 hover:text-blue-600">Register</Link>
         {user && (
-          <button
-            onClick={handleLogout}
-            className="text-red-600 hover:text-red-800 font-medium"
-          >
-            Logout
-          </button>
+         <button
+  onClick={handleLogout}
+  className="text-red-600 hover:text-red-800 font-bold">
+  Logout
+</button>
         )}
       </nav>
     </header>
