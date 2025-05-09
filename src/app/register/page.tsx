@@ -52,7 +52,7 @@ export default function RegisterPage() {
 
   return (
     <div className="p-6 w-[40%] mx-auto bg-white/60 backdrop-blur-md rounded-2xl shadow-md">
-      <h1 className="text-2xl font-bold mb-4">User Registration</h1>
+      <h1 className="text-2xl font-bold mb-4 text-center">User Registration</h1>
 
       {successMessage && (
         <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
