@@ -76,7 +76,7 @@ export default function LoginPage() {
           Login
         </button>
   <a href="/register" className="text-blue-600 hover:underline">
-    Dont have an account? Register
+    Dont have an account? <span className="font-bold">Register</span>
   </a>
 </div>
       </form>
