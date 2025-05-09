@@ -53,7 +53,7 @@ export default function LoginPage() {
   return (
     <div className="flex items-center justify-center min-h-screen">
     <div className="p-6 w-[40%] mx-auto bg-white/60 backdrop-blur-md rounded-2xl shadow-md">
-      <h1 className="text-2xl font-bold mb-4">Login</h1>
+      <h1 className="text-2xl font-bold mb-4 text-center">Login</h1>
       <form onSubmit={handleLogin} className="space-y-4">
         <input
           type="email"
