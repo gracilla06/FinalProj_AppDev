@@ -6,15 +6,18 @@ Next.js, Tailwind CSS, JSONPlaceholder, fetch(), ApexCharts, React Icons, React 
 
 ## Setup and Installation Instructions
 1.	Clone repository
-•	git clone https://github.com/FinalProj_AppDev.git
-2.	Navigate to the project directory
-•	cd FinalProj_AppDev
-3.	Check if clone properly
-•	git status
-4.	Run the development server
+•	```bash
+git clone https://github.com/FinalProj_AppDev.git ```
+3.	Navigate to the project directory
+•	```bash
+cd FinalProj_AppDev ```
+5.	Check if clone properly
+•	```bash
+git status ```
+6.	Run the development server
 •	```bash
 npm run dev ```
-5.	Open it in your brower
+7.	Open it in your brower
 •	Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Team Member Contributions
