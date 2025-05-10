@@ -17,10 +17,10 @@ Next.js, Tailwind CSS, JSONPlaceholder, fetch(), ApexCharts, React Icons, React 
 •	Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Team Member Contributions
-Rustom Gracilla – Create the next.js application, integrated all dependencies, built login and registration forms with Zod validation, google map integration, set up the project in a GitHub repository, and deployed it in vercel.
-Mekaella Gojit – Created the user listing and profiles views, update the post, user, dashboard, login page, and documentation.   
-Cherry Mae Frac – Developed post and comment views, handled admin logic, and updated header.
-Regine Gutierrez –  Created ApexCharts visualization, and updated register.      
+1. Rustom Gracilla – Create the next.js application, integrated all dependencies, built login and registration forms with Zod validation, google map integration, set up the project in a GitHub repository, and deployed it in vercel.
+2. Mekaella Gojit – Created the user listing and profiles views, update the post, user, dashboard, login page, and documentation.   
+3. Cherry Mae Frac – Developed post and comment views, handled admin logic, and updated header.
+4. Regine Gutierrez –  Created ApexCharts visualization, and updated register.      
 > Each member committed code through GitHub and followed consistent commit messages and branch strategies.
 
 ## Deploy on Vercel
