@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full bg-white/60 backdrop-blur-md shadow-md z-10">
-      <nav className="container mx-auto px-6 py-4 flex space-x-6 items-center">
+      <nav className="container mx-auto px-6 py-4 flex flex-wrap justify-center items-center gap-4">
         <Link href="/" className="text-gray-800 hover:text-blue-600">Home</Link>
         <Link href="/users" className="text-gray-800 hover:text-blue-600">Users</Link>
         <Link href="/posts" className="text-gray-800 hover:text-blue-600">Posts</Link>
