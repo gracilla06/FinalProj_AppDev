@@ -103,7 +103,7 @@ export default function MyPostPage() {
 
   return (
     <div className="p-6 max-w-5xl mx-auto">
-      <div className="bg-white border border-gray-300 rounded-2xl shadow-lg p-8 space-y-8">
+      <div className="bg-white/60 backdrop-blur-md border border-gray-300 rounded-2xl shadow-lg p-8 space-y-8">
         <h1 className="text-4xl font-bold text-center text-gray-800">
           Welcome, {user.name}!
         </h1>
