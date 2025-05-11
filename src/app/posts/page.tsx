@@ -75,7 +75,7 @@ export default function PostsPage() {
       ) : (
         <ul className="space-y-4">
           {filteredPosts.map(post => (
-            <li key={post.id} className="border border-gray-300 rounded-lg p-4 hover:bg-gray-50 transition shadow-md hover:shadow-xl hover:scale-105">
+            <li key={post.id} className="border border-gray-300 rounded-lg p-4 bg-white hover:bg-gray-50 transition shadow-md hover:shadow-xl hover:scale-105">
               <Link href={`/posts/${post.id}`} className="block">
               <h2 className="text-2xl font-semibold">{post.title}</h2>
               <p className="text-sm text-gray-500 mb-2">By {getAuthorName(post.userId)}</p>
