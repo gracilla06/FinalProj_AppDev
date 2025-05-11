@@ -95,7 +95,7 @@ export default function LoginPage() {
           </button>
         </form>
         <div className="flex justify-center mt-4">
-          <a href="/register" className="text-blue-600 hover:underline">
+          <a href="/register"  style={{ textDecoration: 'none' }} className="text-blue-600 hover:underline">
             Don't have an account? <span className="font-bold">Register</span>
           </a>
         </div>
