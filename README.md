@@ -16,6 +16,16 @@ Next.js, Tailwind CSS, JSONPlaceholder, fetch(), ApexCharts, React Icons, React 
 7.	Open it in your brower
 •	Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Login Credentials 
+Admin: 
+Email: admin@admin.com
+Password: admin123
+Sample User: 
+Email: Nathan@yesenia.netSincere
+Password: Samantha
+
+
+
 ## Team Member Contributions
 1. Rustom Gracilla – Create the next.js application, integrated all dependencies, built login and registration forms with Zod validation, google map integration, set up the project in a GitHub repository, and deployed it in vercel.
 2. Mekaella Gojit – Created the user listing and profiles views, update the post, user, dashboard, login page, and documentation.   
