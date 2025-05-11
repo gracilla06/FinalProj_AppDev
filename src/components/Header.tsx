@@ -23,18 +23,17 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 w-full bg-white/60 backdrop-blur-md shadow-md z-10">
       <nav className="container mx-auto px-6 py-4 flex flex-wrap justify-center items-center gap-4">
-        <Link href="/" className="text-gray-800 hover:text-blue-600">Home</Link>
-        <Link href="/users" className="text-gray-800 hover:text-blue-600">Users</Link>
-        <Link href="/posts" className="text-gray-800 hover:text-blue-600">Posts</Link>
-        <Link href="/dashboard" className="text-gray-800 hover:text-blue-600">Dashboard</Link>
-        <Link href="/login" className="text-gray-800 hover:text-blue-600">Login</Link>
-        <Link href="/register" className="text-gray-800 hover:text-blue-600">Register</Link>
-        {user && (
-         <button
-  onClick={handleLogout}
-  className="text-red-600 hover:text-red-800 font-bold">
-  Logout
-</button>
+      <Link href="/" className="text-gray-800 px-4 py-2 font-semibold rounded-md transition duration-300 hover:bg-blue-500 hover:text-white hover:shadow-md">Home</Link>
+      <Link href="/users" className="text-gray-800 px-4 py-2 font-semibold rounded-md transition duration-300 hover:bg-blue-500 hover:text-white hover:shadow-md">Users</Link>
+      <Link href="/posts" className="text-gray-800 px-4 py-2 font-semibold rounded-md transition duration-300 hover:bg-blue-500 hover:text-white hover:shadow-md">Posts</Link>
+      <Link href="/dashboard" className="text-gray-800 px-4 py-2 font-semibold rounded-md transition duration-300 hover:bg-blue-500 hover:text-white hover:shadow-md">Dashboard</Link>
+      <Link href="/login" className="text-gray-800 px-4 py-2 font-semibold rounded-md transition duration-300 hover:bg-blue-500 hover:text-white hover:shadow-md">Login</Link>
+      <Link href="/register" className="text-gray-800 px-4 py-2 font-semibold rounded-md transition duration-300 hover:bg-blue-500 hover:text-white hover:shadow-md">Register</Link>
+      {user && (
+       <button
+       onClick={handleLogout}
+       className="text-red-600 px-4 py-2 font-semibold rounded-md transition duration-300 hover:bg-red-500 hover:text-white hover:shadow-md">Logout
+      </button>
         )}
       </nav>
     </header>
