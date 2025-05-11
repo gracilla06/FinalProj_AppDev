@@ -104,6 +104,9 @@ export default function RegisterPage() {
         />
         {errors.address && <p className="text-red-500">{errors.address.message}</p>}
 
+        <label className="block text-sm font-medium text-gray-700">
+          Click on the map below to pinpoint your Address.
+        </label>
         <AddressPicker
           onSelect={(address: string) => {
             setSelectedAddress(address);
