@@ -118,7 +118,7 @@ export default function RegisterPage() {
           <button type="submit" className="bg-blue-600 text-white px-6 py-2 rounded">
             Register
           </button>
-          <a href="/login" className="text-blue-600 hover:underline">
+          <a href="/login"  style={{ textDecoration: 'none' }} className="text-blue-600 hover:underline">
             Already have an account? <span className="font-bold">Login</span>
           </a>
         </div>
